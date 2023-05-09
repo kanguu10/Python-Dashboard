@@ -16,6 +16,7 @@ df['date'] = pd.to_datetime(dict(year=df.YEAR, month=df.MONTH, day=df.DAY)).dt.d
 
 # Create app
 app = dash.Dash(__name__, assets_folder='assets')
+server = app.server
 
 # Define layout
 app.layout = html.Div([
